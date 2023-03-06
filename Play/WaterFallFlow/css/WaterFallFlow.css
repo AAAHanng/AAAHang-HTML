@@ -1,0 +1,26 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 80%;
+    column-count: 5;
+    column-gap: 15px;
+}
+
+.image {
+    margin: 20px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 20px;
+}

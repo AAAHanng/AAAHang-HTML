@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.test{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+
+
+img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 10px;
+    top: 50px;
+}

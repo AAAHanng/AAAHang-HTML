@@ -1,0 +1,27 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory;  y 为滚动方向 mandatory 强制滚动 如果 贴合内容有fixed 可以使用scroll-padding*/
+}
+
+main>section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    scroll-snap-align: start;
+    /* scroll-snap-align: start; 滚动时贴合的位置 */
+    /* scroll-snap-type: always; */
+}
+
+main>section:nth-child(odd) {
+    background-color: pink;
+}

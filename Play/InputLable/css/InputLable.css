@@ -1,0 +1,61 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    background: #1d2b3a;
+}
+
+.Inputbox {
+    position: relative;
+    width: 20%;
+
+}
+
+.Inputbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: aliceblue;
+}
+
+.Inputbox span {
+    position: absolute;
+    left: 0px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, .25);
+    text-transform: uppercase;
+}
+
+.Inputbox input:valid~span,
+.Inputbox input:focus~span {
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+    transition: 0.5s;
+}
+
+.Inputbox:nth-child(2) input:valid~span,
+.Inputbox:nth-child(2) input:focus~span {
+    background: #00dfc4;
+    color: black;
+    border-radius: 2px;
+}
