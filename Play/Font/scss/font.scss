@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain{
+    width: 50%;
+    svg{
+        width: 100%;
+        path{
+            width: 100%;
+            display: block;
+            animation: lineMove 1s;
+        }
+    }
+}
+
+@keyframes lineMove {
+    0% {
+        stroke-dasharray: 0, 378;
+    }
+    50% {
+        stroke-dasharray: 378, 378;
+        fill: rgba(0, 0, 0, 0);
+        opacity: 1;
+    }
+    100% {
+        stroke-dasharray: 378, 378;
+        fill: rgba(255, 119, 0, .5);
+        opacity: 0;
+    }
+}

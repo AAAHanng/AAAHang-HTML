@@ -1,0 +1,35 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contain {
+  width: 50%;
+}
+.contain svg {
+  width: 100%;
+}
+.contain svg path {
+  width: 100%;
+  display: block;
+  animation: lineMove 2s infinite;
+}
+
+@keyframes lineMove {
+  0% {
+    stroke-dasharray: 0, 378;
+    fill
+  }
+  100% {
+    stroke-dasharray: 378, 378;
+    fill: black
+  }
+}
