@@ -17,10 +17,14 @@ body {
 .Inputbox {
     position: relative;
     width: 20%;
-
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Inputbox input {
+    height:100%;
     width: 100%;
     padding: 10px;
     border: 1px solid rgba(255, 255, 255, .25);
