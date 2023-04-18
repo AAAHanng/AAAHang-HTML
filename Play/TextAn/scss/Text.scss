@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 80px;
+    background-color: #111;
+}
+.love{
+    position: relative;
+    h2{
+        position: relative;
+        color: #222;
+        &::after{
+            content: "I Love You";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: white;
+            width: 0%;
+            white-space: nowrap;
+            overflow: hidden;
+            transition: 1s;
+            border-right: 2px solid white;
+            text-shadow: 0 0 10px white;
+        }
+        &:hover:after{
+            width: 100%;
+            transition: 1s;
+        }
+    }
+}

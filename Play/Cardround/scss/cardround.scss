@@ -1,0 +1,68 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 1000px;
+}
+.box{
+    display: flex;
+    min-height: 60vh;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+  
+    transform-style: preserve-3d;
+    transition: 1.2s;
+    animation: rotate1-re 1.2s forwards;
+    &:hover{
+        animation: rotate1 1.2s forwards;
+    }
+    .one{
+        background-color: red;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius:20px;
+        border: 1px solid black;
+        text-align: center;
+        backface-visibility: hidden;
+    }
+    .two{
+        background-color: pink;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius:20px ;
+        transform: rotateY(180deg);
+        border: 1px solid black;
+        text-align: center;
+        backface-visibility: hidden;
+    }
+
+}
+
+
+@keyframes rotate1 {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+}
+
+
+@keyframes rotate1-re {
+    0%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
